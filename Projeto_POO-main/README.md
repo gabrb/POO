@@ -1,25 +1,9 @@
-## Documentação da API FFCE
-OBS: Os endpoints são case-sensitive. 
-### RODANDO O PROJETO
-`dotnet build`
+# POO
 
-`dotnet run`
-### Fazendo Migrations
-`dotnet ef migrations add NOMEDAMIGRATION`
+(Extensão do VS Code Ritwick Dey Live Server é necessário)
 
-`dotnet ef database update`
+Para rodar o projeto:
 
-`dotnet build`
+dotnet build
 
-`dotnet run`
-### Removendo Migrations
-`dotnet ef migrations remove`
-
----
-
-**Base URL:** `{{baseUrl}}/api`
-
----
-
-### OBS:
-NÃO É PARA O USUÁRIO COLOCAR O TOKEN JWT NA HORA DA AUTENTICAÇÃO E NEM VER O RETORNO DA API.
+dotnet run

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Produtor | FFCE</title>
+    <link rel="stylesheet" href="produtor.css">
+    <link rel="stylesheet" href="logout_style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="produtor.js"></script>
+    <script src="home_script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="nav-bar">
+            <div class="container">
+                <a href="home.html"><div class="logo">FFCE</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="home.html">Home</a></li>
+                    <li class="nav-item"><a href="produtor.html" class="active">Meus Produtos</a></li>
+                    <li class="nav-item"><a href="vendas.html">Minhas Vendas</a></li>
+                    <button id="logout-btn" class="logout-btn" style="width:50px;">
+                        <i class='bx bx-log-out'></i>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="producer-dashboard">
+        <div class="container">
+            <h1 class="dashboard-title">Painel do Produtor</h1>
+            
+            <div class="dashboard-actions">
+                <button class="btn" id="add-product-btn">
+                    <i class="fas fa-plus"></i> Adicionar Produto
+                </button>
+                <div class="stats">
+                    <div class="stat-card">
+                        <i class="fas fa-seedling"></i>
+                        <span id="total-products">0</span> Produtos
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-check-circle"></i>
+                        <span id="active-products">0</span> Ativos
+                    </div>
+                </div>
+            </div>
+            
+            <!--Cadastro de produtos-->
+            <div class="modal" id="product-modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2 id="modal-title">Adicionar Novo Produto</h2>
+                    <form id="product-form">
+                        <input type="hidden" id="product-id">
+                        <div class="form-group">
+                            <label for="product-name">Nome do Produto</label>
+                            <input type="text" id="product-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Categoria</label>
+                            <select id="product-category" required>
+                                <option value="">Selecione...</option>
+                                <option value="rosas">Rosas</option>
+                                <option value="girassois">Girassóis</option>
+                                <option value="orquideas">Orquídeas</option>
+                                <option value="cactos">Cactos</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-price">Preço (R$)</label>
+                            <input type="number" id="product-price" min="0" step="0.01" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-description">Descrição</label>
+                            <textarea id="product-description" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Imagem do Produto</label>
+                            <div class="image-preview" id="image-preview"></div>
+                        </div>
+                        <div class="form-group form-actions">
+                            <button type="submit" class="btn">Salvar</button>
+                            <button type="button" class="btn btn-cancel" id="cancel-edit">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Lista de Produtos -->
+            <div class="products-list">
+                <div class="list-header">
+                    <div class="header-item">Produto</div>
+                    <div class="header-item">Categoria</div>
+                    <div class="header-item">Preço</div>
+                    <div class="header-item"></div>
+                    <div class="header-item">Deletar</div>
+                </div>
+                <div class="list-body" id="products-list-body">
+                    <!-- Produtos serão carregados aqui -->
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

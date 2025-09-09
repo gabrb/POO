@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <link rel="stylesheet" href="home_style.css"/>
+   <link rel="stylesheet" href="logout_style.css"/>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+   <script src="home_script.js" defer></script>
+    <title>Floriculta FFCE</title>
+</head>
+
+<body>
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="home.html"><div class="logo">FFCE</div>
+        <ul>
+          <li class="nav-item"><a href="login_usuario.html">Login</a></li>
+          <li class="nav-item"><a href="https://www.instagram.com/so_sigo_quem_e_corno_manso/">Contato</a></li>
+          <li class="nav-item"><a href="buque.html">Buquês</a></li>
+          <li class="nav-item produtor-only"><a href="produtor.html">Página do Produtor</a></li>
+          <li class="nav-item"><a href="carrinho_compras.html">Carrinho<i class="fas fa-shopping-cart"></i></a></li> <span id="cart-count">0</span></a></li>        
+          <button id="logout-btn" class="logout-btn" style="width:50px;">
+            <i class='bx bx-log-out'></i>
+          </button>
+        </ul>
+      </nav>
+  </div>
+  </header>
+
+  
+  <!-- Seção Hero -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Flores frescas para todo o Ceará</h1>
+      <p>Encontre o presente perfeito para quem você ama</p>
+      <a href="buque.html">Ver Coleção</a>
+    </div>
+  </section>
+  
+  
+     <!-- Sobre -->   
+  <section class="sobre" id="sobre">
+      <div class="class-sobre">
+            <div class="sobre-section">
+                <h3>Sobre Nós</h3>
+                <p>Floricultura especializada em arranjos personalizados e entrega rápida.</p>
+            </div>
+  </section>
+  
+   <!-- Produtos em Destaque -->
+    <section class="products" id="produtos">
+
+        <h2 class="section-title"> Catálogo </h2>
+        <div class="product-grid">
+
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/rosavermelha.jpg" alt="Rosas Vermelhas">
+                </div>
+                <div class="product-info">
+                    <h3>Buquê de Rosas Vermelhas</h3>
+                    <p class="price">R$ 120,00</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/girassol.jpg" alt="Girassol">
+                </div>
+                <div class="product-info">
+                    <h3>Arranjo de Girassóis</h3>
+                    <p class="price">R$ 150,00</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/florbranca.jpg" alt="Flores Brancas">
+                </div>
+                <div class="product-info">
+                    <h3>Arranjo de Flores Brancas</h3>
+                    <p class="price">R$ 110,00</p>
+                    <button class="btn">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Adicione mais produtos conforme necessário -->
+        </div>
+        <div class="button-produtos">
+           <a href="buque.html"><button class="btn"> Veja Mais</button>
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+
+<!-- Conta fake do Instagram que eu criei para servir de página da floricultura
+      me lembra de trocar o nome pelo amor de deus-->
+   <h3>Redes Sociais</h3>
+    <div class="social-icons">
+    <a href="https://www.instagram.com/so_sigo_quem_e_corno_manso/"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <p>&copy; 2025 FFCE. Todos os direitos reservados.</p>
+      <p>
+        <a href="#">Política de Privacidade</a> | 
+        <a href="#">Termos de Uso</a>
+      </p>
+    </div>
+  </footer>
+  
+</body>
+</html>

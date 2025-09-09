@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/carrinho_compras.html",
+      "PackagePath": "staticwebassets/carrinho_compras.html"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/carrinho_script.js",
+      "PackagePath": "staticwebassets/carrinho_script.js"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/home.html",
+      "PackagePath": "staticwebassets/home.html"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/home_script.js",
+      "PackagePath": "staticwebassets/home_script.js"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/home_style.css",
+      "PackagePath": "staticwebassets/home_style.css"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/cacto.jpg",
+      "PackagePath": "staticwebassets/images/cacto.jpg"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/cactoempote.jpg",
+      "PackagePath": "staticwebassets/images/cactoempote.jpg"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/florbranca.jpg",
+      "PackagePath": "staticwebassets/images/florbranca.jpg"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/girassol.jpg",
+      "PackagePath": "staticwebassets/images/girassol.jpg"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/images/rosavermelha.jpg",
+      "PackagePath": "staticwebassets/images/rosavermelha.jpg"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/login_script.js",
+      "PackagePath": "staticwebassets/login_script.js"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/login_style.css",
+      "PackagePath": "staticwebassets/login_style.css"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/login_usuario.html",
+      "PackagePath": "staticwebassets/login_usuario.html"
+    },
+    {
+      "Id": "/home/matheuscastelo/Área de Trabalho/PROJETO POO GABRIEL/Projeto_POO/wwwroot/style_carrinho.css",
+      "PackagePath": "staticwebassets/style_carrinho.css"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.FFCE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.FFCE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.FFCE.props",
+      "PackagePath": "build\\FFCE.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.FFCE.props",
+      "PackagePath": "buildMultiTargeting\\FFCE.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.FFCE.props",
+      "PackagePath": "buildTransitive\\FFCE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

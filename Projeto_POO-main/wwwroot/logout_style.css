@@ -1,0 +1,43 @@
+.logout-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  display: none; /* Inicialmente oculto */
+}
+
+.logout-btn:hover {
+  background: #d32f2f;
+}
+
+/* Responsividade para logout */
+@media (max-width: 768px) {
+  .logout-btn {
+    top: 15px;
+    right: 15px;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+.produtor-only {
+  display: none; /* Esconde por padrão */
+}
+
+/* Mostra apenas quando logado como produtor */
+body[data-role="produtor"] .produtor-only {
+  display: block;
+}
+
+/* Esconde completamente quando deslogado */
+body:not([data-role]) .produtor-only {
+  display: none !important;
+}

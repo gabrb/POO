@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style_carrinho.css"/>
+  <link rel="stylesheet" href="logout_style.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <script src="carrinho_script.js" defer></script>
+  <script src="home_script.js" defer></script>
+  <title>Carrinho de Compras</title>
+</head>
+
+<body>
+    <header>
+      <a href="home.html"><img src="images/logo.png" style="width:100px;"></a>
+      <button id="logout-btn" class="logout-btn" style="width:50px;">
+          <i class='bx bx-log-out'></i>
+    </button>
+    </header>
+
+    <main>
+      <div class="page-title">Seu Carrinho</div>
+      <div class="content">
+        <section>
+          <table>
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+<!-- *to-do*: Ajustar todas essas linhas quando mudar para itens dinámicos  -->
+            <tbody>
+                 <!-- Primeiro no carrinho  -->
+              <tr>
+                <td>
+                  <div class="product">
+                    <img src="images/rosavermelha.jpg" alt="Rosas Vermelhas"/>
+                    <div class="info">
+                      <div class="name">Buquê de Rosas Vermelhas</div>
+                    </div>
+                  </div>
+
+                </td>
+                <td>R$ 120,00</td>
+
+                <td>
+                  <div class="qty" data-id="0">
+                    <button onclick="changeQuantity(0, -1)">-</button>
+                    <span id="quantity-0" class="quantity">0</span>
+                    <button onclick="changeQuantity(0, 1)">+</button>
+                  </div>
+                </td>
+
+                
+                <td><span id="total-0">R$ 0,00</span></td>
+
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>
+
+                 <!-- Segundo produto -->
+              <tr>
+                <td>
+                  <div class="product" data-id="1">
+                    <img src="images/girassol.jpg" alt="Arranjo de girassois" />
+                  
+                    <div class="info">
+                      <div class="name">Arranjo de Girassóis</div>
+                     </div>
+                  </div>
+                </td>
+                <td>R$ 150,00</td>
+                <td>
+
+                  <div class="qty" data-id="1">
+                    <button onclick="changeQuantity(1, -1)">-</button>
+                    <span id="quantity-1" class="quantity">0</span>
+                    <button onclick="changeQuantity(1, 1)">+</button>
+                  </div>
+
+                </td>
+                <td><span id="total-1">R$ 0,00</span></td>
+                <td>
+                  <button class="remove"><i class="bx bx-x"></i></button>
+                </td>
+              </tr>           
+            </tbody>
+<!-- Fim do *to-do* -->      
+
+          </table>
+        </section>
+        <aside>
+          <div class="box">
+            <header>Resumo da compra</header>
+        
+            <footer>
+              <span>Total</span>
+              <span id="totalfinal">R$ 0,00</span>
+            </footer>
+          </div>
+          <button>Finalizar Compra</button>
+          <a href="home.html" class="continuar">Continuar Comprando</a>
+        </aside>
+      </div>
+    </main>
+</body>
+</html>

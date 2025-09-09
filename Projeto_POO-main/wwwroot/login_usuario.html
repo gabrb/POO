@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="login_style.css"/>
+  <script src="login_script.js" defer></script>
+  <title>Login Cadastro</title>
+</head>
+
+<header>
+    <div class="container">
+      <nav>
+        <a href="home.html"><img src="images/logo.png" style="width:100px;"></a>
+      </nav>
+</header>
+
+<body>
+  <div class="login-wrap">
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked />
+      <label for="tab-1" class="tab">Login</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up" />
+      <label for="tab-2" class="tab">Cadastre-se</label>
+
+      <div class="login-form">
+
+        <!-- LOGIN -->
+        <form class="sign-in-htm">
+         
+          <label for="login-username" class="label">Email  </label>
+          <input id="login-username" name="username" type="text" class="input" style="width:500px" required />
+
+          <label for="login-password" class="label">Password</label>
+          <input id="login-password" name="password" type="password" class="input" style="width:500px"required />           
+<div class="">
+          <input type="submit" class="button" value="Entrar" style="width:500px"/>
+</div>
+<div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#forgot">Esqueceu a senha?</a>
+          </div>
+        </form>
+
+        <!-- CADASTRO -->
+        <form class="sign-up-htm" id="cadastro-form" style="width:500px">
+          <label for="signup-user-type" class="label" >Tipo de Usuário</label>
+          <select id="signup-user-type" name="user-type" class="input" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="produtor" >Produtor </option>
+            <option value="cliente">Cliente</option>
+          </select>
+
+          <!-- CAMPOS PARA CLIENTE -->
+          <div id="campos-cliente" style="display: none; width:500px">
+            <!-- Campo NOME adicionado para cliente -->
+            <label for="signup-nome-cliente" class="label">Nome</label>
+            <input id="signup-nome-cliente" type="text" class="input" required />
+
+            <label for="signup-email-cliente" class="label">Email</label>
+            <input id="signup-email-cliente" type="email" class="input" required />
+
+            <label for="signup-telefone-cliente" class="label">Telefone</label>
+            <input id="signup-telefone-cliente" type="text" class="input" required />
+
+            <label for="signup-endereco-cliente" class="label">Endereço</label>
+            <input id="signup-endereco-cliente" type="text" class="input" required />
+
+            <label for="signup-password-cliente" class="label">Senha</label>
+            <input id="signup-password-cliente" type="password" class="input" required />
+
+            <label for="signup-gostos" class="label">Gostos de flores</label>
+            <input id="signup-gostos" type="text" class="input" />
+          </div>
+
+          <!-- CAMPOS PARA PRODUTOR -->
+          <div id="campos-produtor" style="display: none; width:500px">
+            <label for="signup-nome-loja" class="label">Nome da Loja</label>
+            <input id="signup-nome-loja" type="text" class="input" required />
+
+            <label for="signup-nome-produtor" class="label">Seu Nome</label>
+            <input id="signup-nome-produtor" type="text" class="input" required />
+
+            <label for="signup-endereco-loja" class="label">Endereço da Loja</label>
+            <input id="signup-endereco-loja" type="text" class="input" required />
+
+            <label for="signup-telefone-produtor" class="label">Telefone</label>
+            <input id="signup-telefone-produtor" type="text" class="input" required />
+
+            <label for="signup-password-produtor" class="label">Senha</label>
+            <input id="signup-password-produtor" type="password" class="input" required />
+
+            <label for="signup-email-produtor" class="label">Email</label>
+            <input id="signup-email-produtor" type="email" class="input" required />
+
+            <label for="signup-descricao" class="label">Descrição da Loja</label>
+            <input id="signup-descricao" type="text" class="input" />
+          </div>
+
+          <input type="submit" class="button" value="Enviar" style ="height:50px; width:500px"/>
+          <div class="hr"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

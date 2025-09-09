@@ -1,0 +1,6 @@
+@FFCE_HostAddress = http://localhost:5211
+
+GET {{FFCE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
